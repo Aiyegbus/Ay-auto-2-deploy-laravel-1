@@ -1,6 +1,5 @@
 provider "aws" {
-  region  = "us-west-1" # Change to your desired AWS region
-  profile = "my-profile"
+  region = "us-west-1" # Change to your desired AWS region
 }
 
 resource "aws_security_group" "instance-sg" {
@@ -53,3 +52,5 @@ resource "aws_instance" "example" {
     Name = "Example-instance"
   }
 }
+
+
