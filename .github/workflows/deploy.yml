@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+env:
+  TF_CLOUD_ORGANIZATION: "Ayodev"
+  TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
+  TF_WORKSPACE: "test-CI-auto-tf-deploy-2"
+  CONFIG_DIRECTORY: "./"
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
